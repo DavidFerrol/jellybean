@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JellyBeans</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Work+Sans" />
+
+  <style>
+    body {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>Click the button to generate a Jelly Bean selection &rarr;&nbsp;&nbsp;
+          <button class="btn btn-primary" onclick="generateJellybeans()">GOOD LUCK</button>
+        </p>
+        <span id="jellybeans"></span>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <script>
+    function generateJellybeans() {
+      var rand = Math.floor(Math.random() * 10) + 1;
+      document.getElementById('jellybeans').innerHTML = rand;
+
+      if (rand == 1) {
+        document.getElementById('jellybeans').innerHTML = `<img src="01.jpg" /><br /><h1>Spoiled Milk or Coconut</h1>`;
+      }
+      if (rand == 2) {
+        document.getElementById('jellybeans').innerHTML =
+          `<img src="02.jpg" /><br /><h1>Dead Fish or Strawberry Banana Smoothie</h1>`;
+      }
+      if (rand == 3) {
+        document.getElementById('jellybeans').innerHTML =
+          `<img src="03.jpg" /><br /><h1>Stinky Socks or Tutti-Fruitti</h1>`;
+      }
+      if (rand == 4) {
+        document.getElementById('jellybeans').innerHTML =
+          `<img src="04.jpg" /><br /><h1>Lawn Clippings or Lime</h1>`;
+      }
+      if (rand == 5) {
+        document.getElementById('jellybeans').innerHTML =
+          `<img src="05.jpg" /><br /><h1>Toothpaste or Blueberry</h1>`;
+      }
+      if (rand == 6) {
+        document.getElementById('jellybeans').innerHTML =
+          `<img src="06.jpg" /><br /><h1>Rotten Egg or Buttered Popcorn</h1>`;
+      }
+      if (rand == 7) {
+        document.getElementById('jellybeans').innerHTML =
+          `<img src="07.jpg" /><br /><h1>Canned Dog Food or Chocolate Pudding</h1>`;
+      }
+      if (rand == 8) {
+        document.getElementById('jellybeans').innerHTML = `<img src="08.jpg" /><br /><h1>Barf or Peach</h1>`;
+      }
+      if (rand == 9) {
+        document.getElementById('jellybeans').innerHTML =
+          `<img src="09.jpg" /><br /><h1>Mouldy Cheese or Caramel Corn</h1>`;
+      }
+      if (rand == 10) {
+        document.getElementById('jellybeans').innerHTML =
+          `<img src="10.jpg" /><br /><h1>Booger or Juicy Pear</h1>`;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
