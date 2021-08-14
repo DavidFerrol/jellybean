@@ -2,7 +2,7 @@ body {
   width: 100%;
   align-items: center;
   line-height: 1.25;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -47,8 +47,8 @@ footer {
   text-align: center;
   padding: 2em;
   margin: 1.2em;
-  border-radius: .5em;
-  transition: transform .5s;
+  border-radius: 0.5em;
+  transition: transform 0.5s;
 }
 
 .project svg {
@@ -78,11 +78,11 @@ footer {
 }
 
 .dribbble {
-  background: #EA4C89;
+  background: #ea4c89;
 }
 
 .insta {
-  background: #E4405F;
+  background: #e4405f;
 }
 
 .git {
@@ -94,7 +94,7 @@ footer {
 }
 
 .linkedin {
-  background: #0077B5;
+  background: #0077b5;
 }
 
 footer {
@@ -108,7 +108,7 @@ footer a {
 
 .love {
   color: red;
-  margin: 0 .25em;
+  margin: 0 0.25em;
 }
 
 @media (min-device-width: 768px) {
